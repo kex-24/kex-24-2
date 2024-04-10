@@ -1,90 +1,86 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
+# Personalized Programming Task: The Avian Adventure
 
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+## Objective
+
+In this task, you will practice object-oriented programming concepts in Java by designing and implementing classes, methods, and objects. Your theme will take flight in the fascinating world of birds, where each bird has unique attributes and behaviors. This task will give you hands-on experience in designing classes, adding fields and methods, managing object creation, and encapsulation through getters and setters. 
 
 ## Deadline
-This assignment is due before the next scheduled class.
+
+Submit this assignment before the next Java programming session.
 
 ## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+
+For details on how to complete and submit this assignment, refer to the assignments section of the course instructions available on your course portal.
 
 ## Preparation
 
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
-
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
+- Ensure you've completed and understood all questions in Module 2: Looking Inside Classes.
+- Review the provided reading materials on classes, objects, constructors, getters, setters, and encapsulation.
 
 ## Learning Goals
 
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+- Understanding of Java class design
+- Implementation of fields and constructors
+- Creation and use of getters and setters
+- Manipulation with dot operator
+- Practical use of the `main` method
+- Grasping the concepts of scope and variable shadowing
 
 ## Troubleshooting Guide
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+If you encounter any issues,
+1. Check the posted issues on the course's Git repository. Other students might have encountered similar issues.
+2. If your issue is unique, create a New Issue with a descriptive title.
+3. Utilize the weekly lab sessions to ask TAs questions in person. 
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+Collaboration with peers is encouraged, but do not share direct answers.
 
-## Assignment Details
+## Assignment
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+**Background:**
 
-### Task 1: Class Creation
+In an unnamed forest on the outskirts of an uncharted city, there exists a realm inhabited by extraordinary birds. Each bird has distinctive characteristics and abilities. Your mission is to bring this avian world to life by modeling these birds in Java.
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+### Bird Class Design
 
-### Task 2: Defining Properties
+Start by creating a new Java file named `Bird.java`. This file will encapsulate the `Bird` class. Once created, provide the bird with the following attributes (fields):
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+- String species
+- int age
+- float wingspan (in centimeters)
+- boolean canFly
+- String favoriteFood
 
-- String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+### Implementing Birds (Object creation)
 
-### Task 3: Spawning Galaxy Pets
+- Implement a constructor in the `Bird` class that allows setting all attributes during object initialization.
+- Create three different bird objects in your main method showcasing varied species, age, wingspan, etc.
+- Utilize getters and setters to manage access to the bird objects' fields.
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+### Bird Behaviors
 
-### Task 4: Encapsulation with Getters and Setters
+- Implement a method `sing()` that prints a unique song to the console for each bird.
+- Add an `eat(String food)` method that allows the bird to consume different foods. If the food matches the bird's favorite food, print a special message.
+- Design an `attemptFlight()` method that determines whether a bird can fly. If the bird cannot fly, print an appropriate message.
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
+### Display Information
 
-### Task 5: Constructing with Constructors
+- Create a method `displayInfo()` in your `Bird` class that prints all the information about the bird (species, age, etc.) to the console.
 
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
+### Engaging Scenarios
 
-### Task 6: Display Information
+- Concoct a scenario where two birds meet, try to eat the same piece of food, and then try to fly together. Utilize your methods to bring this scene to life in the main method.
 
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
+## Conclusion
 
-### Task 7: The Cosmic Challenge
+This programming task is designed to solidify your understanding of basic object-oriented programming concepts in Java. By creating and managing your bird objects, you will get a closer look at how classes and objects can be used to model real-world scenarios.
 
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
+## Submission Checklist
 
-### Task 8: Understanding Scope and Shadowing
+- Bird class with fields, constructor, getters, and setters.
+- Implementation of at least three distinct bird objects.
+- Functionality for birds to sing, eat, and attempt to fly.
+- A method to display bird information neatly.
+- A creative scenario involving bird interactions.
 
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
-
-## Final Checklist
-
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
-
-## Bugs and Errors?
-
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
-
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+If you identify any problems or inconsistencies within this exercise, please report them, so we can improve the task for future students.
